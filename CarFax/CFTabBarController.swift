@@ -11,19 +11,32 @@ class CFTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureTabBarControllers()
+    }
+    
+    func configureTabBarControllers(){
+        UITabBar.appearance().barTintColor = .systemBlue
+        UITabBar.appearance().selectedImageTintColor = .white
+        UITabBar.appearance().unselectedItemTintColor = .lightText
+        viewControllers = [createCarController(), createSavedController()]
+    }
+    
+    func createSavedController() -> UINavigationController {
+        let savedcarsController = SavedCarsViewController()
+        savedcarsController.title = "Saved Cars"
+        savedcarsController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        savedcarsController.tabBarItem.badgeColor = .white
+        return UINavigationController(rootViewController: savedcarsController)
+    }
+    
+    func createCarController() -> UINavigationController {
+        let carsViewController = CarsViewController()
+        carsViewController.title = "Cars"
+        carsViewController.tabBarItem = UITabBarItem.init(title: "Cars", image:UIImage(named: "cars"), tag: 0)
+        carsViewController.tabBarItem.badgeColor = .white
+        return UINavigationController(rootViewController: carsViewController)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

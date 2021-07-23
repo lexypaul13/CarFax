@@ -6,11 +6,12 @@
 //
 
 import Foundation
+
 class NetworkManger{
     
     static let sharedTask = NetworkManger()
     private let baseURL =  "https://carfax-for-consumers.firebaseio.com/assignment.json"
-    private init(){}
+     init(){}
     
     
     private var jsonDecoder:JSONDecoder = {
@@ -46,11 +47,11 @@ class NetworkManger{
             }
             
             do {
-                let apiResponse = try? self.jsonDecoder.decode(CFDataModel.self, from: data)
-                print(String.init(data: data, encoding: .utf8)!)
+                let apiResponse = try self.jsonDecoder.decode(CFDataModel.self, from: data)
+                print(String.init(data: data, encoding: .utf8))
                // completed(.success(apiResponse!))
             }catch{
-                print(error)
+                print(error.localizedDescription)
             }
         }
         task.resume()

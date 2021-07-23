@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57133C8526A9067200F81952 /* CFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57133C8426A9067200F81952 /* CFTabBarController.swift */; };
+		57133C8726A9094100F81952 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57133C8626A9094100F81952 /* CarsViewController.swift */; };
+		57133C8926A9099A00F81952 /* SavedCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57133C8826A9099A00F81952 /* SavedCarsViewController.swift */; };
+		576992D926A9F7500044896A /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992D826A9F7500044896A /* NetworkManger.swift */; };
+		576992DE26AA09FF0044896A /* CFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992DD26AA09FF0044896A /* CFTitleLabel.swift */; };
+		576992E226AA0D130044896A /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E126AA0D130044896A /* CFButton.swift */; };
+		576992E426AA102F0044896A /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E326AA102F0044896A /* CarImages.swift */; };
+		576992E726AA42B50044896A /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E626AA42B50044896A /* ErrorMessages.swift */; };
+		577349A826A9280800F8D96F /* CFDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577349A726A9280800F8D96F /* CFDataModel.swift */; };
 		57D1AF6A26A8F65D00219FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */; };
 		57D1AF6C26A8F65D00219FC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */; };
-		57D1AF6E26A8F65D00219FC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF6D26A8F65D00219FC5 /* ViewController.swift */; };
 		57D1AF7326A8F65F00219FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D1AF7226A8F65F00219FC5 /* Assets.xcassets */; };
 		57D1AF7626A8F65F00219FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D1AF7426A8F65F00219FC5 /* LaunchScreen.storyboard */; };
 		57D1AF8126A8F65F00219FC5 /* CarFaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF8026A8F65F00219FC5 /* CarFaxTests.swift */; };
@@ -34,10 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57133C8426A9067200F81952 /* CFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTabBarController.swift; sourceTree = "<group>"; };
+		57133C8626A9094100F81952 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
+		57133C8826A9099A00F81952 /* SavedCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCarsViewController.swift; sourceTree = "<group>"; };
+		576992D826A9F7500044896A /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		576992DD26AA09FF0044896A /* CFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTitleLabel.swift; sourceTree = "<group>"; };
+		576992E126AA0D130044896A /* CFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
+		576992E326AA102F0044896A /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
+		576992E626AA42B50044896A /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		577349A726A9280800F8D96F /* CFDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFDataModel.swift; sourceTree = "<group>"; };
 		57D1AF6626A8F65D00219FC5 /* CarFax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarFax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57D1AF6D26A8F65D00219FC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57D1AF7226A8F65F00219FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D1AF7526A8F65F00219FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D1AF7726A8F65F00219FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +90,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		576992DA26AA030B0044896A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				577349A726A9280800F8D96F /* CFDataModel.swift */,
+				576992D826A9F7500044896A /* NetworkManger.swift */,
+				576992E626AA42B50044896A /* ErrorMessages.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		576992E526AA10F10044896A /* Texts, Image and Button */ = {
+			isa = PBXGroup;
+			children = (
+				576992DD26AA09FF0044896A /* CFTitleLabel.swift */,
+				576992E126AA0D130044896A /* CFButton.swift */,
+				576992E326AA102F0044896A /* CarImages.swift */,
+			);
+			path = "Texts, Image and Button";
+			sourceTree = "<group>";
+		};
 		57D1AF5D26A8F65D00219FC5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +135,11 @@
 			children = (
 				57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */,
 				57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */,
-				57D1AF6D26A8F65D00219FC5 /* ViewController.swift */,
+				576992E526AA10F10044896A /* Texts, Image and Button */,
+				576992DA26AA030B0044896A /* Networking */,
+				57133C8626A9094100F81952 /* CarsViewController.swift */,
+				57133C8826A9099A00F81952 /* SavedCarsViewController.swift */,
+				57133C8426A9067200F81952 /* CFTabBarController.swift */,
 				57D1AF7226A8F65F00219FC5 /* Assets.xcassets */,
 				57D1AF7426A8F65F00219FC5 /* LaunchScreen.storyboard */,
 				57D1AF7726A8F65F00219FC5 /* Info.plist */,
@@ -254,9 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57D1AF6E26A8F65D00219FC5 /* ViewController.swift in Sources */,
+				576992E226AA0D130044896A /* CFButton.swift in Sources */,
+				576992DE26AA09FF0044896A /* CFTitleLabel.swift in Sources */,
+				577349A826A9280800F8D96F /* CFDataModel.swift in Sources */,
+				576992D926A9F7500044896A /* NetworkManger.swift in Sources */,
+				576992E426AA102F0044896A /* CarImages.swift in Sources */,
+				57133C8526A9067200F81952 /* CFTabBarController.swift in Sources */,
+				576992E726AA42B50044896A /* ErrorMessages.swift in Sources */,
 				57D1AF6A26A8F65D00219FC5 /* AppDelegate.swift in Sources */,
 				57D1AF6C26A8F65D00219FC5 /* SceneDelegate.swift in Sources */,
+				57133C8726A9094100F81952 /* CarsViewController.swift in Sources */,
+				57133C8926A9099A00F81952 /* SavedCarsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

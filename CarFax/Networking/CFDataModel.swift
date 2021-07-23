@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - CarsData
-struct CarsData {
+struct CFDataModel:Codable {
     let backfillCount: Int
     let dealerNewCount, dealerUsedCount, enhancedCount: Int
     let listings: [Listing]
@@ -17,7 +17,7 @@ struct CarsData {
 }
 
 // MARK: - Listing
-struct Listing {
+struct Listing: Codable {
     let advantage: Bool
     let atomOtherOptions, atomTopOptions: [String]
     let backfill: Bool
@@ -57,7 +57,7 @@ struct Listing {
 }
 
 // MARK: - Dealer
-struct Dealer {
+struct Dealer:Codable {
     let address: String
     let backfill: Bool
     let carfaxID: String
@@ -86,26 +86,26 @@ struct Images {
     let large, medium, small: [String]
 }
 
-enum Make {
+enum Make:CodingKey {
     case fiat
 }
 
 // MARK: - Fiat124_SpiderTrimLevel
-struct Fiat124_SpiderTrimLevel {
+struct Fiat124_SpiderTrimLevel:Codable  {
     let count: Int
     let text: String
     let url: String
 }
 
 // MARK: - SimilarCar
-struct SimilarCar {
+struct SimilarCar:Codable  {
     let text: String
     let url: String
 }
 
 
 // MARK: - SearchRequest
-struct SearchRequest {
+struct SearchRequest:Codable {
     let make: Make
     let mileageRange: Range
     let priceRange: PriceRange
@@ -116,11 +116,11 @@ struct SearchRequest {
 }
 
 // MARK: - Range
-struct Range {
+struct Range:Codable {
     let max, min: Int
 }
 
 // MARK: - PriceRange
-struct PriceRange {
+struct PriceRange:Codable {
     let min: Int
 }

@@ -10,7 +10,6 @@ import Foundation
 struct CFDataModel: Codable {
     
     let listings: [Listing]
-    
     enum CodingKeys: String, CodingKey {
         case listings
     }
@@ -28,7 +27,8 @@ struct Listing: Codable {
     let listPrice: Int
     let trim: String
     let model: String
-    
+    let currentPrice: Int
+
     enum CodingKeys: String, CodingKey {
         case dealer
         case id
@@ -40,6 +40,7 @@ struct Listing: Codable {
         case transmission
         case year
         case trim
+        case currentPrice
     }
 }
 
@@ -60,17 +61,21 @@ struct Dealer: Codable {
 }
 
 
-
 // MARK: - Images
 struct Images: Codable {
-    
-    let large, medium, small: [String]
-    
+    let baseURL: String
+    let firstPhoto: FirstPhoto
+
     enum CodingKeys: String, CodingKey {
-        case large, medium, small
+        case baseURL = "baseUrl"
+        case firstPhoto
     }
 }
 
+// MARK: - FirstPhoto
+struct FirstPhoto: Codable {
+    let large, medium, small: String
+}
 
 enum Transmission: String, Codable {
     case automatic = "Automatic"

@@ -25,8 +25,14 @@ class CarImages: UIImageView {
         layer.cornerRadius = 10
         clipsToBounds = true
         translatesAutoresizingMaskIntoConstraints = false
+        contentMode = .scaleAspectFit
     }
     
-
+    func downloadImage(_ url:String)  {
+        NetworkManger.sharedTask.downloadImage(from:url){ [weak self] image in
+               guard let self = self else { return }
+               DispatchQueue.main.async { self.image = image}
+        }
+    }
     
 }

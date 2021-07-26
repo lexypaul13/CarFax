@@ -16,6 +16,7 @@
 		576992E426AA102F0044896A /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E326AA102F0044896A /* CarImages.swift */; };
 		576992E726AA42B50044896A /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E626AA42B50044896A /* ErrorMessages.swift */; };
 		577349A826A9280800F8D96F /* CFDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577349A726A9280800F8D96F /* CFDataModel.swift */; };
+		5777B8CE26ACBCA9000849CD /* CFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */; };
 		57D1AF6A26A8F65D00219FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */; };
 		57D1AF6C26A8F65D00219FC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */; };
 		57D1AF7326A8F65F00219FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D1AF7226A8F65F00219FC5 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		576992E326AA102F0044896A /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
 		576992E626AA42B50044896A /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		577349A726A9280800F8D96F /* CFDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFDataModel.swift; sourceTree = "<group>"; };
+		5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTableViewCell.swift; sourceTree = "<group>"; };
 		57D1AF6626A8F65D00219FC5 /* CarFax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarFax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */,
 				576992E526AA10F10044896A /* Texts, Image and Button */,
 				576992DA26AA030B0044896A /* Networking */,
+				5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */,
 				57133C8626A9094100F81952 /* CarsViewController.swift */,
 				57133C8826A9099A00F81952 /* SavedCarsViewController.swift */,
 				57133C8426A9067200F81952 /* CFTabBarController.swift */,
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5777B8CE26ACBCA9000849CD /* CFTableViewCell.swift in Sources */,
 				576992E226AA0D130044896A /* CFButton.swift in Sources */,
 				576992DE26AA09FF0044896A /* CFTitleLabel.swift in Sources */,
 				577349A826A9280800F8D96F /* CFDataModel.swift in Sources */,

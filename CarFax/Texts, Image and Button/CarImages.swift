@@ -22,8 +22,6 @@ class CarImages: UIImageView {
     
     
     private func configure(){
-        layer.cornerRadius = 10
-        clipsToBounds = true
         translatesAutoresizingMaskIntoConstraints = false
         contentMode = .scaleAspectFit
     }

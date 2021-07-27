@@ -24,6 +24,7 @@ class CarsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    
     func configureTableViewController(){
         view.addSubview(tableView)
         tableView.frame = view.bounds

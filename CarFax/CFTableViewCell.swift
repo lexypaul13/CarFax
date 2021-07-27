@@ -48,8 +48,12 @@ class CFTableViewCell: UITableViewCell {
         stateLabel.text = carFax.dealer.state
         phoneButton.setTitleColor(.blue, for: .normal)
         phoneButton.contentHorizontalAlignment = .leading
-        phoneButton.setTitle(carFax.dealer.phone, for: .normal)
+        phoneButton.setTitle(carFax.dealer.phone, for: .normal)        
     }
+    
+    @objc func buttonAction() {
+            print("Button pressed")
+        }
     
     
     private func configure(){
@@ -112,9 +116,11 @@ class CFTableViewCell: UITableViewCell {
             
         ])
         
+        
+        
     }
     
-    
+         
     
     
     

@@ -50,7 +50,7 @@ class NetworkManger{
             
             do {
                 let apiResponse = try self.jsonDecoder.decode(CFDataModel.self, from: data)
-                print(String.init(data: data, encoding: .utf8))
+               // print(String.init(data: data, encoding: .utf8))
                 completed(.success(apiResponse))
             }catch{
                 print(error.localizedDescription)

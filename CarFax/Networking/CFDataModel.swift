@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CFDataModel: Codable {
+struct CFDataModel: Codable, Hashable {
     
     let listings: [Listing]
     enum CodingKeys: String, CodingKey {
@@ -15,14 +15,13 @@ struct CFDataModel: Codable {
     }
 }
 
-struct Listing: Codable {
+struct Listing: Codable, Hashable {
     
     let dealer: Dealer
     let id: String
     let images: Images
     let make: String
     let mileage: Int
-    let transmission: Transmission
     let year: Int
     let listPrice: Int
     let trim: String
@@ -37,7 +36,6 @@ struct Listing: Codable {
         case model
         case listPrice
         case mileage
-        case transmission
         case year
         case trim
         case currentPrice
@@ -45,7 +43,7 @@ struct Listing: Codable {
 }
 
 
-struct Dealer: Codable {
+struct Dealer: Codable,Hashable {
     
     let address: String
     let city: String
@@ -62,7 +60,7 @@ struct Dealer: Codable {
 
 
 // MARK: - Images
-struct Images: Codable {
+struct Images: Codable,Hashable {
     let baseURL: String
     let firstPhoto: FirstPhoto
 
@@ -73,14 +71,11 @@ struct Images: Codable {
 }
 
 // MARK: - FirstPhoto
-struct FirstPhoto: Codable {
+struct FirstPhoto: Codable,Hashable {
     let large, medium, small: String
 }
 
-enum Transmission: String, Codable {
-    case automatic = "Automatic"
-    case manual = "Manual"
-}
+
 
 
 

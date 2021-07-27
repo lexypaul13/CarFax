@@ -24,6 +24,8 @@
 		57D1AF8126A8F65F00219FC5 /* CarFaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF8026A8F65F00219FC5 /* CarFaxTests.swift */; };
 		57D1AF8C26A8F65F00219FC5 /* CarFaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1AF8B26A8F65F00219FC5 /* CarFaxUITests.swift */; };
 		57DC8D0226AF87A400976ABF /* CFImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC8D0126AF87A400976ABF /* CFImageViewController.swift */; };
+		57DC8D0426AFA26400976ABF /* SaveManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC8D0326AFA26400976ABF /* SaveManger.swift */; };
+		57DC8D0626AFBDF500976ABF /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC8D0526AFBDF500976ABF /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		57D1AF8B26A8F65F00219FC5 /* CarFaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFaxUITests.swift; sourceTree = "<group>"; };
 		57D1AF8D26A8F65F00219FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57DC8D0126AF87A400976ABF /* CFImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFImageViewController.swift; sourceTree = "<group>"; };
+		57DC8D0326AFA26400976ABF /* SaveManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveManger.swift; sourceTree = "<group>"; };
+		57DC8D0526AFBDF500976ABF /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,12 +143,14 @@
 			children = (
 				57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */,
 				57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */,
+				57DC8D0326AFA26400976ABF /* SaveManger.swift */,
 				576992E526AA10F10044896A /* Texts, Image and Button */,
 				576992DA26AA030B0044896A /* Networking */,
 				5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */,
-				57133C8626A9094100F81952 /* CarsViewController.swift */,
+				57DC8D0526AFBDF500976ABF /* UIExtension.swift */,
 				57DC8D0126AF87A400976ABF /* CFImageViewController.swift */,
 				57133C8826A9099A00F81952 /* SavedCarsViewController.swift */,
+				57133C8626A9094100F81952 /* CarsViewController.swift */,
 				57133C8426A9067200F81952 /* CFTabBarController.swift */,
 				57D1AF7226A8F65F00219FC5 /* Assets.xcassets */,
 				57D1AF7426A8F65F00219FC5 /* LaunchScreen.storyboard */,
@@ -302,6 +308,7 @@
 			files = (
 				5777B8CE26ACBCA9000849CD /* CFTableViewCell.swift in Sources */,
 				576992E226AA0D130044896A /* CFButton.swift in Sources */,
+				57DC8D0426AFA26400976ABF /* SaveManger.swift in Sources */,
 				57DC8D0226AF87A400976ABF /* CFImageViewController.swift in Sources */,
 				576992DE26AA09FF0044896A /* CFTitleLabel.swift in Sources */,
 				577349A826A9280800F8D96F /* CFDataModel.swift in Sources */,
@@ -312,6 +319,7 @@
 				57D1AF6A26A8F65D00219FC5 /* AppDelegate.swift in Sources */,
 				57D1AF6C26A8F65D00219FC5 /* SceneDelegate.swift in Sources */,
 				57133C8726A9094100F81952 /* CarsViewController.swift in Sources */,
+				57DC8D0626AFBDF500976ABF /* UIExtension.swift in Sources */,
 				57133C8926A9099A00F81952 /* SavedCarsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

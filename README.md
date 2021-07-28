@@ -1,4 +1,7 @@
 # CarFax
+Description:
+A simple app that connects to the CarFax api and displays the data. 
+
 Frameworks:
 * Cod-able
 * User defaults 

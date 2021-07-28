@@ -14,6 +14,4 @@ enum CFError:String, Error {
     case invaldURL = "Not a valid Url"
     case saveFailure = "There was an issue saving this car"
     case duplicateShow = "Duplicate detected"
-
-
 }

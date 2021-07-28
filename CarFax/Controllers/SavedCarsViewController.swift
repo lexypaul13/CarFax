@@ -74,6 +74,7 @@ extension SavedCarsViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CFTableViewCell.resuseIdentifier) as! CFTableViewCell
         let favoriteCar = cars[indexPath.row]
+        cell.phoneButton.addTarget(self, action: #selector(CarsViewController.callTapped(_:)), for: .touchUpInside)
         cell.setCell(carFax: favoriteCar)
         return cell
     }
@@ -91,6 +92,13 @@ extension SavedCarsViewController:UITableViewDelegate, UITableViewDataSource{
         
     }
     
-    
+    @objc func callTapped(_ sender: UIButton) {
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        if let indexPath = tableView.indexPathForRow(at: buttonPosition){
+            let phoneNumber = cars[indexPath.row].dealer.phone
+            callNumber(phoneNumber: phoneNumber)
+        }
+        
+    }
     
 }

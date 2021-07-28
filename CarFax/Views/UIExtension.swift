@@ -18,4 +18,13 @@ extension UIViewController{
         }
         
     }
+    
+    func callNumber(phoneNumber:String) {
+        if let phoneCallURL = URL(string: "\(phoneNumber)") {
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
+    }
 }

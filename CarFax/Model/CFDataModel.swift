@@ -29,6 +29,7 @@ struct Listing: Codable, Hashable {
     let currentPrice: Int
 
     enum CodingKeys: String, CodingKey {
+        
         case dealer
         case id
         case images
@@ -51,6 +52,7 @@ struct Dealer: Codable,Hashable {
     let state: String
     
     enum CodingKeys: String, CodingKey {
+        
         case address
         case city
         case phone
@@ -58,8 +60,6 @@ struct Dealer: Codable,Hashable {
     }
 }
 
-
-// MARK: - Images
 struct Images: Codable,Hashable {
     let baseURL: String
     let firstPhoto: FirstPhoto
@@ -70,8 +70,8 @@ struct Images: Codable,Hashable {
     }
 }
 
-// MARK: - FirstPhoto
 struct FirstPhoto: Codable,Hashable {
+    
     let large, medium, small: String
 }
 

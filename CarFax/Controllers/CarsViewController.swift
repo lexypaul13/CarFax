@@ -24,7 +24,6 @@ class CarsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    
     func configureTableViewController(){
         view.addSubview(tableView)
         tableView.frame = view.bounds
@@ -59,10 +58,9 @@ extension CarsViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CFTableViewCell.resuseIdentifier) as! CFTableViewCell
         let car = cars[indexPath.row]
-        //cell.phoneButton.addTarget(self, action: #selector(CarsViewController.callTapped(_:)), for: .touchUpInside)
+        cell.phoneButton.addTarget(self, action: #selector(CarsViewController.callTapped(_:)), for: .touchUpInside) 
         cell.setCell(carFax: car)
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -91,20 +89,19 @@ extension CarsViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = cars[indexPath.row]
         let destVC = CFImageViewController(carsImages:cell.images.firstPhoto.large)
-        navigationController?.pushViewController(destVC, animated: true)
+        navigationController?.pushViewController(destVC, animated: false)
     }
     
     
-    //    @objc func callTapped(_ sender: UIButton) {
-    //        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
-    //        if let indexPath = tableView.indexPathForRow(at: buttonPosition){
-    //            let phoneNumber = cars[indexPath.row].dealer.phone
-    //           print("taped\(phoneNumber)")
-    //        }
-    //
-    //    }
-    //
-    
-    
+    @objc func callTapped(_ sender: UIButton) {
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        if let indexPath = tableView.indexPathForRow(at: buttonPosition){
+            let phoneNumber = cars[indexPath.row].dealer.phone
+            callNumber(phoneNumber: phoneNumber)
+        }
+        
+    }
     
 }
+
+

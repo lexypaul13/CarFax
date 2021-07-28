@@ -50,8 +50,6 @@ enum SaveManger{
         
     }
     
-    
-    
     static func collectFavorties(completed:@escaping(Result<[Listing], CFError>)->Void){
         guard let favoriteData = defaults.object(forKey: Keys.favorites) as? Data else {
             completed(.success([]))
@@ -66,6 +64,7 @@ enum SaveManger{
         }
         
     }
+    
     static func collectRecent(completed:@escaping(Result<[Listing], CFError>)->Void){
         guard let favoriteData = defaults.object(forKey: Keys.mostRecent) as? Data else {
             completed(.success([]))

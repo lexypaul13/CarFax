@@ -8,7 +8,8 @@
 import UIKit
 
 class CFImageViewController: UIViewController {
-    var carImage = CarImages(frame: .zero)
+    
+    var carImage = CFImages(frame: .zero)
     var carsImages:String?
     
     init(carsImages:String) {
@@ -23,25 +24,24 @@ class CFImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
+        configureImage()
         // Do any additional setup after loading the view.
     }
     
-    private func configure(){
+    private func configureImage(){
+        carImage.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(carImage)
         
         NSLayoutConstraint.activate([
-            carImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            carImage.topAnchor.constraint(equalTo: view.topAnchor),
             carImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             carImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             carImage.bottomAnchor.constraint(equalTo:view.bottomAnchor, constant: 0),
             carImage.heightAnchor.constraint(equalToConstant: 600),
             carImage.widthAnchor.constraint(equalToConstant: 600),
-
-
         ])
         
-        
+        carImage.downloadImage(carsImages ?? "No Image")
     }
     
 }

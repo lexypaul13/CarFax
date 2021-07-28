@@ -10,10 +10,11 @@
 		57133C8526A9067200F81952 /* CFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57133C8426A9067200F81952 /* CFTabBarController.swift */; };
 		57133C8726A9094100F81952 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57133C8626A9094100F81952 /* CarsViewController.swift */; };
 		57133C8926A9099A00F81952 /* SavedCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57133C8826A9099A00F81952 /* SavedCarsViewController.swift */; };
+		571345F226B1AE0100925AAA /* WorkCited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571345F126B1AE0100925AAA /* WorkCited.swift */; };
 		576992D926A9F7500044896A /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992D826A9F7500044896A /* NetworkManger.swift */; };
 		576992DE26AA09FF0044896A /* CFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992DD26AA09FF0044896A /* CFTitleLabel.swift */; };
 		576992E226AA0D130044896A /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E126AA0D130044896A /* CFButton.swift */; };
-		576992E426AA102F0044896A /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E326AA102F0044896A /* CarImages.swift */; };
+		576992E426AA102F0044896A /* CFImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E326AA102F0044896A /* CFImages.swift */; };
 		576992E726AA42B50044896A /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992E626AA42B50044896A /* ErrorMessages.swift */; };
 		577349A826A9280800F8D96F /* CFDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577349A726A9280800F8D96F /* CFDataModel.swift */; };
 		5777B8CE26ACBCA9000849CD /* CFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */; };
@@ -49,10 +50,11 @@
 		57133C8426A9067200F81952 /* CFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTabBarController.swift; sourceTree = "<group>"; };
 		57133C8626A9094100F81952 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
 		57133C8826A9099A00F81952 /* SavedCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCarsViewController.swift; sourceTree = "<group>"; };
+		571345F126B1AE0100925AAA /* WorkCited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCited.swift; sourceTree = "<group>"; };
 		576992D826A9F7500044896A /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
 		576992DD26AA09FF0044896A /* CFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTitleLabel.swift; sourceTree = "<group>"; };
 		576992E126AA0D130044896A /* CFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
-		576992E326AA102F0044896A /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
+		576992E326AA102F0044896A /* CFImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFImages.swift; sourceTree = "<group>"; };
 		576992E626AA42B50044896A /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		577349A726A9280800F8D96F /* CFDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFDataModel.swift; sourceTree = "<group>"; };
 		5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTableViewCell.swift; sourceTree = "<group>"; };
@@ -98,24 +100,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		576992DA26AA030B0044896A /* Networking */ = {
+		576992DA26AA030B0044896A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				577349A726A9280800F8D96F /* CFDataModel.swift */,
 				576992D826A9F7500044896A /* NetworkManger.swift */,
 				576992E626AA42B50044896A /* ErrorMessages.swift */,
+				57DC8D0326AFA26400976ABF /* SaveManger.swift */,
 			);
-			path = Networking;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		576992E526AA10F10044896A /* Texts, Image and Button */ = {
+		57C9ACED26AFCDE900B83A2D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */,
+				57DC8D0526AFBDF500976ABF /* UIExtension.swift */,
 				576992DD26AA09FF0044896A /* CFTitleLabel.swift */,
 				576992E126AA0D130044896A /* CFButton.swift */,
-				576992E326AA102F0044896A /* CarImages.swift */,
+				576992E326AA102F0044896A /* CFImages.swift */,
 			);
-			path = "Texts, Image and Button";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57C9ACEE26AFCE3800B83A2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57133C8826A9099A00F81952 /* SavedCarsViewController.swift */,
+				57133C8626A9094100F81952 /* CarsViewController.swift */,
+				57DC8D0126AF87A400976ABF /* CFImageViewController.swift */,
+				57133C8426A9067200F81952 /* CFTabBarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		57D1AF5D26A8F65D00219FC5 = {
@@ -143,18 +159,13 @@
 			children = (
 				57D1AF6926A8F65D00219FC5 /* AppDelegate.swift */,
 				57D1AF6B26A8F65D00219FC5 /* SceneDelegate.swift */,
-				57DC8D0326AFA26400976ABF /* SaveManger.swift */,
-				576992E526AA10F10044896A /* Texts, Image and Button */,
-				576992DA26AA030B0044896A /* Networking */,
-				5777B8CD26ACBCA9000849CD /* CFTableViewCell.swift */,
-				57DC8D0526AFBDF500976ABF /* UIExtension.swift */,
-				57DC8D0126AF87A400976ABF /* CFImageViewController.swift */,
-				57133C8826A9099A00F81952 /* SavedCarsViewController.swift */,
-				57133C8626A9094100F81952 /* CarsViewController.swift */,
-				57133C8426A9067200F81952 /* CFTabBarController.swift */,
-				57D1AF7226A8F65F00219FC5 /* Assets.xcassets */,
+				576992DA26AA030B0044896A /* Model */,
+				57C9ACED26AFCDE900B83A2D /* Views */,
+				57C9ACEE26AFCE3800B83A2D /* Controllers */,
 				57D1AF7426A8F65F00219FC5 /* LaunchScreen.storyboard */,
+				571345F126B1AE0100925AAA /* WorkCited.swift */,
 				57D1AF7726A8F65F00219FC5 /* Info.plist */,
+				57D1AF7226A8F65F00219FC5 /* Assets.xcassets */,
 			);
 			path = CarFax;
 			sourceTree = "<group>";
@@ -312,8 +323,9 @@
 				57DC8D0226AF87A400976ABF /* CFImageViewController.swift in Sources */,
 				576992DE26AA09FF0044896A /* CFTitleLabel.swift in Sources */,
 				577349A826A9280800F8D96F /* CFDataModel.swift in Sources */,
+				571345F226B1AE0100925AAA /* WorkCited.swift in Sources */,
 				576992D926A9F7500044896A /* NetworkManger.swift in Sources */,
-				576992E426AA102F0044896A /* CarImages.swift in Sources */,
+				576992E426AA102F0044896A /* CFImages.swift in Sources */,
 				57133C8526A9067200F81952 /* CFTabBarController.swift in Sources */,
 				576992E726AA42B50044896A /* ErrorMessages.swift in Sources */,
 				57D1AF6A26A8F65D00219FC5 /* AppDelegate.swift in Sources */,
@@ -491,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8B6WBPCD;
 				INFOPLIST_FILE = CarFax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,6 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8B6WBPCD;
 				INFOPLIST_FILE = CarFax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

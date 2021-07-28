@@ -19,37 +19,35 @@ class SavedCarsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getFavoriteCars()
     }
     
     func configureViewController(){
-        title = "Cars"
+        title = "Saved Cars"
         view.backgroundColor = .white
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    
     func configureTableViewController(){
         view.addSubview(tableView)
         tableView.frame = view.bounds
-        tableView.rowHeight = 250
+        tableView.rowHeight = 150
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CFTableViewCell.self, forCellReuseIdentifier: CFTableViewCell.resuseIdentifier)
     }
     
-    
     func getFavoriteCars(){
         SaveManger.collectFavorties{ [weak self ] result in
             guard let self = self else { return}
             switch result{
+            
             case .success(let favorites):
                 self.cars = favorites
                 DispatchQueue.main.async {self.tableView.reloadData()}
-          
+                
             case .failure( _):
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Cannot", message:"Something went wrong" ,preferredStyle: UIAlertController.Style.alert)
@@ -72,7 +70,6 @@ extension SavedCarsViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cars.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CFTableViewCell.resuseIdentifier) as! CFTableViewCell

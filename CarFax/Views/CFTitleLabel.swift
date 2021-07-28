@@ -9,7 +9,6 @@ import UIKit
 
 class CFTitleLabel: UILabel {
 
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -20,19 +19,20 @@ class CFTitleLabel: UILabel {
     }
     
     
-    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat, fontStyle: UIFont.Weight) {
+    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat, fontStyle: UIFont.Weight, color:UIColor) {
         self.init(frame: .zero)
         self.textAlignment = textAlignment
         self.font = UIFont.systemFont(ofSize: fontSize, weight: fontStyle)
-
+        self.textColor = color
     }
     
     private func configure(){
-        textColor = .label
         adjustsFontSizeToFitWidth = true
         lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    
+
 }
+
+ 

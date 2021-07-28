@@ -21,14 +21,6 @@ class CFTabBarController: UITabBarController {
         viewControllers = [createCarController(), createSavedController()]
     }
     
-    func createSavedController() -> UINavigationController {
-        let savedcarsController = SavedCarsViewController()
-        savedcarsController.title = "Saved Cars"
-        savedcarsController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        savedcarsController.tabBarItem.badgeColor = .white
-        return UINavigationController(rootViewController: savedcarsController)
-    }
-    
     func createCarController() -> UINavigationController {
         let carsViewController = CarsViewController()
         carsViewController.title = "Cars"
@@ -37,6 +29,15 @@ class CFTabBarController: UITabBarController {
         return UINavigationController(rootViewController: carsViewController)
     }
     
+    func createSavedController() -> UINavigationController {
+        let savedcarsController = SavedCarsViewController()
+        savedcarsController.title = "Saved Cars"
+        savedcarsController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        savedcarsController.tabBarItem.badgeColor = .white
+        return UINavigationController(rootViewController: savedcarsController)
+    }
+    
+
 
     
 }
